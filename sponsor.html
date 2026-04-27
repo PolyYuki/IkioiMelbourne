@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スポンサー募集 | 勢い講演会メルボルン</title>
+    <meta name="description" content="勢い講演会メルボルンでは、メルボルンで挑戦する人々を一緒に応援してくださるスポンサー様を募集しております。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&family=Yuji+Syuku&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sponsor-hero {
+            padding: 180px 20px 80px;
+            text-align: center;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.95)), url('melbourne_bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sponsor-content {
+            padding: 80px 20px;
+            background-color: var(--bg-dark);
+        }
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .benefits-list li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.2rem 1.2rem 1.2rem 3.5rem;
+            border-radius: 8px;
+        }
+        .benefits-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 1.2rem;
+            color: #FF416C;
+            font-size: 1.2rem;
+        }
+        .sponsor-card-gold .target-icon { color: #FFD700; background: rgba(255, 215, 0, 0.1); }
+        .sponsor-card-silver .target-icon { color: #C0C0C0; background: rgba(192, 192, 192, 0.1); }
+        .sponsor-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            margin: 1rem 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <img src="logo.png" alt="勢い講演会メルボルン">
+            </a>
+            <div class="header-right">
+                <nav class="header-nav">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#target">Target</a>
+                    <a href="index.html#program">Program</a>
+                    <a href="index.html#faq">FAQ</a>
+                    <a href="index.html#cta">Entry</a>
+                    <a href="sponsor.html">Sponsorship</a>
+                </nav>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/ikioi.melbourne/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ikioi.melbourne/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@Ikioi.Melbourne" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SPONSOR HERO -->
+    <section class="sponsor-hero">
+        <div class="container reveal">
+            <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem;">Sponsor Recruitment</h1>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+                勢い講演会メルボルンでは、メルボルンで挑戦する人々を一緒に応援してくださる企業様・個人様を募集しております。
+            </p>
+        </div>
+    </section>
+
+    <!-- SPONSOR DETAILS -->
+    <section class="sponsor-content">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span>Sponsor Plans</span>
+                スポンサー種別
+            </h2>
+            
+            <div class="target-grid" style="margin-bottom: 5rem;">
+                <!-- Gold Sponsor -->
+                <div class="glass-card target-card sponsor-card-gold reveal">
+                    <div class="target-icon">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h3>ゴールドスポンサー</h3>
+                    <p style="color: var(--text-muted);">（YouTube12配信分）</p>
+                    <div class="sponsor-price">$1000</div>
+                    <ul class="target-list" style="margin-top: 1.5rem;">
+                        <li>下記に記載の「すべてのスポンサー特典」が12配信分適用されます。</li>
+                        <li>長期的なブランディングと継続的な応援に最適です。</li>
+                    </ul>
+                </div>
+                
+                <!-- Silver Sponsor -->
+                <div class="glass-card target-card sponsor-card-silver reveal" style="transition-delay: 0.2s;">
+                    <div class="target-icon">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h3>シルバースポンサー</h3>
+                    <p style="color: var(--text-muted);">（YouTube3配信分）</p>
+                    <div class="sponsor-price">$300</div>
+                    <ul class="target-list" style="margin-top: 1.5rem;">
+                        <li>下記に記載の「すべてのスポンサー特典」が3配信分適用されます。</li>
+                        <li>短期集中でのプロモーションに最適です。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="section-title reveal">
+                <span>Benefits</span>
+                スポンサー特典
+            </h2>
+            
+            <ul class="benefits-list reveal">
+                <li>YouTube配信で、<strong>ロゴ・お名前掲載</strong></li>
+                <li>YouTube配信概要欄に、<strong>お名前・URL掲載</strong></li>
+                <li>収録に<strong>ご招待</strong>（現場での交流が可能）</li>
+                <li>収録時、<strong>フライヤー・商品サンプル等配布</strong></li>
+            </ul>
+
+            <div class="reveal" style="text-align: center; margin-top: 5rem;">
+                <p style="margin-bottom: 2rem; font-size: 1.2rem;">スポンサーに関するお問い合わせ・お申込みは、<br>以下の専用フォームよりお気軽にご連絡ください。</p>
+                <a href="#" class="btn-gold" style="padding: 1.2rem 3rem;">
+                    スポンサーに申し込む <i class="fa-solid fa-envelope" style="margin-left: 8px;"></i>
+                </a>
+                <div style="margin-top: 2rem;">
+                    <a href="index.html" style="color: var(--text-muted); text-decoration: underline;">← トップページへ戻る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="organizer-info reveal" style="margin-bottom: 2rem;">
+                <p style="margin-bottom: 1.5rem; color: var(--text-main); font-weight: 600; font-family: var(--font-heading); letter-spacing: 2px;">【 主催 】</p>
+                <a href="https://www.jcafmel.com/" target="_blank" rel="noopener noreferrer" style="display: inline-block; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="jcaf_logo.png" alt="JCAF Logo" style="max-width: 250px; width: 100%; margin: 0 auto 1rem; display: block; background: rgba(255,255,255,0.9); padding: 15px; border-radius: 12px;">
+                </a>
+                <p style="font-weight: 500;">Japan Culture and Art Foundation Inc (JCAF)</p>
+            </div>
+            
+            <div class="footer-social reveal" style="margin-bottom: 2rem;">
+                <div class="social-links footer-social-links">
+                    <a href="https://www.instagram.com/ikioi.melbourne/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ikioi.melbourne/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@Ikioi.Melbourne" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <p>&copy; 勢い講演会メルボルン / Ikioi Presentation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
