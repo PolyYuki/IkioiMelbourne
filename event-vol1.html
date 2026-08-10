@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <script>
+        // GitHub Pages から Vercel へのリダイレクト処理
+        if (window.location.hostname === 'polyyuki.github.io') {
+            var cleanPath = window.location.pathname.replace(/^\/IkioiMelbourne/, '').replace(/\.html$/, '');
+            cleanPath = (cleanPath === '/index' || cleanPath === '') ? '/' : cleanPath;
+            window.location.replace('https://ikioi-melbourne.vercel.app' + cleanPath + window.location.search);
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>勢い講演会メルボルン / Ikioi Presentation</title>

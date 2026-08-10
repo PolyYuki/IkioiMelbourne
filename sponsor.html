@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <script>
+        // GitHub Pages から Vercel へのリダイレクト処理
+        if (window.location.hostname === 'polyyuki.github.io') {
+            var cleanPath = window.location.pathname.replace(/^\/IkioiMelbourne/, '').replace(/\.html$/, '');
+            cleanPath = (cleanPath === '/index' || cleanPath === '') ? '/' : cleanPath;
+            window.location.replace('https://ikioi-melbourne.vercel.app' + cleanPath + window.location.search);
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>スポンサー募集 | 勢い講演会メルボルン</title>
@@ -80,6 +88,9 @@
             margin: 1rem 0;
             color: #fff;
         }
+        .sponsor-card-gold .target-list li::before { color: #FFD700; }
+        .sponsor-card-silver .target-list li::before { color: #C0C0C0; }
+        .sponsor-card-bronze .target-list li::before { color: #CD7F32; }
     </style>
 </head>
 <body>
@@ -139,11 +150,19 @@
                         <i class="fa-solid fa-crown"></i>
                     </div>
                     <h3>ゴールドスポンサー</h3>
-                    <p style="color: var(--text-muted);">（YouTube12配信分）</p>
-                    <div class="sponsor-price">$1000</div>
-                    <ul class="target-list" style="margin-top: 1.5rem;">
-                        <li>下記に記載の「すべてのスポンサー特典」が12配信分適用されます。</li>
-                        <li>長期的なブランディングと継続的な応援に最適です。</li>
+                    <div class="sponsor-price">$1000.00</div>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                        勢い講演会4回とYouTube配信12配信分のスポンサーです。
+                    </p>
+                    <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin: 1.5rem 0;">
+                    <h4 style="font-size: 1rem; margin-bottom: 1rem; color: #FFD700;">＜スポンサー特典＞</h4>
+                    <ul class="target-list">
+                        <li>YouTube動画内と概要欄に、ロゴ・お名前掲載</li>
+                        <li>勢い講演会の観覧にご招待</li>
+                        <li>勢い講演会の登壇</li>
+                        <li>YouTubeプロモーション動画やインタビュー動画を掲載</li>
+                        <li>フライヤー・商品サンプル等配布</li>
+                        <li>勢い講演会会場のオープニングでお名前(社名)紹介</li>
                     </ul>
                 </div>
                 
@@ -153,11 +172,18 @@
                         <i class="fa-solid fa-medal"></i>
                     </div>
                     <h3>シルバースポンサー</h3>
-                    <p style="color: var(--text-muted);">（YouTube3配信分）</p>
-                    <div class="sponsor-price">$300</div>
-                    <ul class="target-list" style="margin-top: 1.5rem;">
-                        <li>下記に記載の「すべてのスポンサー特典」が3配信分適用されます。</li>
-                        <li>短期集中でのプロモーションに最適です。</li>
+                    <div class="sponsor-price">$300.00</div>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                        勢い講演会2回とYouTube6配信分のスポンサーです。お申込後、お送りするフォームに必要事項をご入力ください。
+                    </p>
+                    <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin: 1.5rem 0;">
+                    <h4 style="font-size: 1rem; margin-bottom: 1rem; color: #C0C0C0;">＜スポンサー特典＞</h4>
+                    <ul class="target-list">
+                        <li>YouTube動画に、ロゴ・お名前掲載</li>
+                        <li>YouTube概要欄に、お名前・URL掲載</li>
+                        <li>勢い講演会の観覧にご招待</li>
+                        <li>勢い講演会開催時、フライヤー・商品サンプル等配布</li>
+                        <li>勢い講演会会場のオープニングでお名前(社名)紹介</li>
                     </ul>
                 </div>
                 
@@ -167,26 +193,21 @@
                         <i class="fa-solid fa-award"></i>
                     </div>
                     <h3>ブロンズスポンサー</h3>
-                    <p style="color: var(--text-muted);">（YouTube1配信分）</p>
-                    <div class="sponsor-price">$110</div>
-                    <ul class="target-list" style="margin-top: 1.5rem;">
-                        <li>下記に記載の「すべてのスポンサー特典」が1配信分適用されます。</li>
-                        <li>まずは一度お試しで応援してみたい方に最適です。</li>
+                    <div class="sponsor-price">$110.00</div>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                        勢い講演会2回とYouTube6配信分のスポンサーです。お申込後、お送りするフォームに必要事項をご入力ください。
+                    </p>
+                    <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin: 1.5rem 0;">
+                    <h4 style="font-size: 1rem; margin-bottom: 1rem; color: #CD7F32;">＜スポンサー特典＞</h4>
+                    <ul class="target-list">
+                        <li>YouTube動画に、ロゴ・お名前掲載</li>
+                        <li>YouTube概要欄に、お名前・URL掲載</li>
+                        <li>勢い講演会の観覧にご招待</li>
+                        <li>勢い講演会開催時、フライヤー・商品サンプル等配布</li>
+                        <li>勢い講演会会場のオープニングでお名前(社名)紹介</li>
                     </ul>
                 </div>
             </div>
-
-            <h2 class="section-title reveal">
-                <span>Benefits</span>
-                スポンサー特典
-            </h2>
-            
-            <ul class="benefits-list reveal">
-                <li>YouTube配信で、<strong>ロゴ・お名前掲載</strong></li>
-                <li>YouTube配信概要欄に、<strong>お名前・URL掲載</strong></li>
-                <li>勢い講演会の観覧に<strong>ご招待</strong>（現場での交流が可能）</li>
-                <li>勢い講演会開催時、<strong>フライヤー・商品サンプル等配布</strong></li>
-            </ul>
 
             <div class="reveal" style="text-align: center; margin-top: 5rem;">
                 <p style="margin-bottom: 2rem; font-size: 1.2rem;">スポンサーのお申込みは、<br>以下のリンクよりお願いいたします。</p>
